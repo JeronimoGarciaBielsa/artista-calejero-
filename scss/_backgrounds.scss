@@ -1,0 +1,73 @@
+%bg{
+	height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+} 
+%span{
+	background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.bg-cover-index{
+	@extend %bg;
+	background-image: url('../assets/fondo_1.jpg')!important;
+	span{
+		@extend %span;
+	}
+}
+.bg-cover-expresate{
+	@extend %bg;
+	background-image: url('../assets/fondo_pinceles.jpg')!important;
+}
+.bg-cover-contacto{
+	@extend %bg;
+	background-image: url('../assets/contacto_1.jpg')!important;
+	span{
+		@extend %span;
+	}
+}
+.bg-cover-quienes-somos{
+	@extend %bg;
+	background-image: url('../assets/fantasy.jpg')!important;
+	span{
+		@extend %span;
+	}
+}
+.bg-fondo-obras{
+	background: map-get($gradiantes, obras1);
+}
+.bg-fondo-obras-2{
+	background: map-get($gradiantes, obras2);
+}
+.bg-pinceles{
+  background-image: url('../assets/fondo_pinceles.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-jumbotron{
+  background-color: #c3bcbf;
+}
+.bg-jumbotron-box{
+  background: map-get($gradiantes, jbox);
+}
+@mixin bg-expresate{
+	background-size: cover;
+	background-position: center;
+}
+.bg-expresate-1{
+  @include bg-expresate;
+  background-image: url('../assets/expresate_1.jpg');
+}
+.bg-expresate-2{
+  @include bg-expresate;	
+  background-image: url('../assets/expresate_2.jpg');
+}
+.bg-expresate-3{
+  @include bg-expresate;	
+  background-image: url('../assets/expresate_3.jpg');
+}
+.bg-form{
+  background: map-get($gradiantes, form);
+}
