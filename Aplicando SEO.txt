@@ -1,0 +1,7 @@
+Aplicando SEO:
+1° 
+	Comprimi todas las imagenes de la pagina en https://tinypng.com/
+2°
+	Agregue title y descripcion a casa pagina
+3°
+	Coloque etiquetas semanticas (h1) aunque aun tengo que colocar mas
