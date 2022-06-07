@@ -35,11 +35,21 @@
 		@extend %span;
 	}
 }
+.bg-cover-obras{
+	@extend %bg;
+	background-image: url('../assets/fondo-obras.jpg')!important;
+	span{
+		@extend %span;
+	}
+}
 .bg-fondo-obras{
 	background: map-get($gradiantes, obras1);
 }
 .bg-fondo-obras-2{
 	background: map-get($gradiantes, obras2);
+}
+.bg-fondo-obras-3{
+	background: map-get($gradiantes, obras3);
 }
 .bg-pinceles{
   background-image: url('../assets/fondo_pinceles.jpg');

@@ -1,0 +1,29 @@
+.mediaquerie{
+	padding-top: 0;
+}
+@media (max-width: 768px){
+	.mediaquerie{
+		padding-top: 20px;
+	}	
+	.mediaquerie-2{
+		flex-direction: column-reverse;
+	}
+	.navbar-nav, .navbar .container{
+		flex-direction: column!important;
+	}
+	.mediaquerie-4{
+		font-size: calc(0.90rem + .3vw)!important;
+	}
+	.animacion-input-2{
+		line-height: 17px;
+		width: 280px;
+	}
+}
+@media (max-width: 962px){
+	.mediaquerie-3{
+		flex-direction: column!important;
+	}
+}
+
+
+

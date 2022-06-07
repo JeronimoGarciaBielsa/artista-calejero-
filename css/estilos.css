@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 body {
   font-family: 'Raleway', sans-serif;
-  background: radial-gradient(circle, #c6d0f6 27%, #9a9aaa 100%);
+  background: linear-gradient(90deg, #e4e4e4 19%, #e0e0e0 77%);
   animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s both;
+}
+
+.font-personal-1 {
+  font-family: 'Sacramento', cursive;
 }
 
 .z-index-cover {
@@ -25,14 +30,14 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.bg-cover-index, .bg-cover-expresate, .bg-cover-contacto, .bg-cover-quienes-somos {
+.bg-cover-index, .bg-cover-expresate, .bg-cover-contacto, .bg-cover-quienes-somos, .bg-cover-obras {
   height: 100vh;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
 
-.bg-cover-index span, .bg-cover-contacto span, .bg-cover-quienes-somos span {
+.bg-cover-index span, .bg-cover-contacto span, .bg-cover-quienes-somos span, .bg-cover-obras span {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
@@ -55,12 +60,20 @@ body {
   background-image: url("../assets/fantasy.jpg") !important;
 }
 
+.bg-cover-obras {
+  background-image: url("../assets/fondo-obras.jpg") !important;
+}
+
 .bg-fondo-obras {
-  background: linear-gradient(45deg, #5b2139 20%, #631a2f 49%, #630163 86%, #320254 94%);
+  background: linear-gradient(120deg, #5b2139 20%, #631a2f 49%, #630163 86%, #320254 94%);
 }
 
 .bg-fondo-obras-2 {
   background: linear-gradient(240deg, #5b2139 20%, #631a2f 49%, #630163 86%, #320254 94%);
+}
+
+.bg-fondo-obras-3 {
+  background: linear-gradient(90deg, #4b6746 0%, #315936 40%, #184f38 67%, #083028 100%);
 }
 
 .bg-pinceles {
@@ -237,10 +250,9 @@ body {
 }
 
 .animacion-1:hover {
-  background-color: #123948;
-  box-shadow: 0px -8px 20px 0px #ed637d;
+  border: solid 1px;
   color: #fff;
-  transform: translateY(3px) scale(1.03);
+  transform: scale(1.05);
 }
 
 .animacion-1:active {
@@ -300,7 +312,7 @@ body {
 }
 
 .animacion-input-2 {
-  line-height: 28px;
+  line-height: 23px;
   border: 2px solid transparent;
   border-bottom-color: #fff;
   padding: .2rem 0;
@@ -332,4 +344,33 @@ input:hover, textarea:hover {
   padding: .2rem 1rem;
   border-radius: 1rem;
   border-color: #fff;
+}
+
+.mediaquerie {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .mediaquerie {
+    padding-top: 20px;
+  }
+  .mediaquerie-2 {
+    flex-direction: column-reverse;
+  }
+  .navbar-nav, .navbar .container {
+    flex-direction: column !important;
+  }
+  .mediaquerie-4 {
+    font-size: calc(0.90rem + .3vw) !important;
+  }
+  .animacion-input-2 {
+    line-height: 17px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 962px) {
+  .mediaquerie-3 {
+    flex-direction: column !important;
+  }
 }
