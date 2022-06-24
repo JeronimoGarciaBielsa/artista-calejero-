@@ -2,6 +2,12 @@
 	padding-top: 0;
 }
 @media (max-width: 768px){
+	.bg-cover-index{
+		background-image: url('../assets/fondo_1_mq.jpg')!important;
+	}
+	.bg-cover-quienes-somos{
+		background-image: url('../assets/quienes-somos3-mq.jpg')!important;
+	}
 	.mediaquerie{
 		padding-top: 20px;
 	}	
@@ -17,6 +23,9 @@
 	.animacion-input-2{
 		line-height: 17px;
 		width: 280px;
+	}
+	.mediaquerie-5{
+		font-size: calc(0.8rem + .3vw)!important;
 	}
 }
 @media (max-width: 962px){

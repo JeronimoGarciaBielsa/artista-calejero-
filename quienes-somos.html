@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Quienes somos</title>
+    <link rel="icon" type="image/x-icon" href="assets/art.png">
   </head>
   <body>
                                <!--Banner-->
@@ -55,16 +56,22 @@
         </div>
       </nav>
                           <!--Hero-->
-      <div class="px-4 h-91 bg-fondo text-center d-flex flex-column align-items-center justify-content-around text-white">
-        <h1 class="display-4 shadow-text fw-bold z-index-cover animacion-texto">¿Quiénes Somos?</h1>
-        <div class="container d-flex flex-column justify-content-around align-items-center">
-          <div class="col-lg-6 mx-auto z-index-cover animacion-texto">
-            <p class="lead mb-4 shadow-text fs-4">Somos una comunidad que quiere abrirle las puertas a nuevos artistas. Darles la oportunidad de exponer sus obras de arte al mundo. Buscamos promover el "Arte hecho en casa" y también la posibilidad a la gente de llevar al hogar, oficina o donde deseen una decoración diferente, que tenga una historia y valor emocional.</p>
+      <div class="px-4 h-75 text-center d-flex flex-column align-items-center justify-content-center text-white">
+        <h1 class="display-2 shadow-text fw-bold  z-index-cover animacion-texto">¿Quiénes somos?</h1>
+        <div class="col-lg-6 mx-auto z-index-cover animacion-texto">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4 gap-3"><a class="text-white text-decoration-none" href="contacto.html">Comunícate con nosotros</a></button>
           </div>
-          <div class="col-lg-6 mx-auto z-index-cover animacion-texto">
-            <p class="lead mb-4 shadow-text fs-4">Además buscamos hacer caridad donde más se necesite. Nuestras subastas apoyarán cualquier causa que busque ayudar al que menos tiene. Únete y participa con nosotros!</p>
-          </div>
-        </div>  
+        </div>
+      </div>                    
+    </div>
+    <!--Quienes Somos-->
+    <div class="px-4 py-5 text-center shadow-box bg-fondo-quienes-somos text-white">
+      <img class="d-block mx-auto mb-4" src="assets/equipo.png" alt="" width="100" height="100">
+      <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4 fs-4 lh-base">Somos una <strong class="fw-bold fs-2">comunidad</strong> que quiere abrirle las puertas a nuevos <strong class="fw-bold fs-2">artistas</strong>. Darles la oportunidad de exponer sus obras de arte al mundo. Buscamos promover el <strong class="fw-bold fs-2">"Arte hecho en casa"</strong> y también darle la posibilidad a la gente de llevar al hogar, oficina o donde deseen una decoración diferente, que tenga una historia y valor emocional.</p>
+        <p class="lead pt-3 mb-4 fs-4 lh-base">Además buscamos hacer <strong class="fw-bold fs-2">caridad</strong> donde más se necesite. Nuestras <strong class="fw-bold fs-2">subastas</strong> apoyarán cualquier causa que busque ayudar al que menos tiene. <strong class="fw-bold fs-2">Únete y participa</strong> con nosotros!</p>
+        <button class="btn btn-outline-secondary btn-fondo-2 px-4 py-2 fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Unirse</button>
       </div>
     </div>
                                     <!--Footer-->
@@ -79,7 +86,24 @@
         </ul>
         <p class="text-center text-muted">© 2022 Artista callejero, Inc</p>
       </footer>
-    </div>                
+    </div> 
+                      <!--Modal--> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-modal text-white border border-3 border-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold fs-3" id="exampleModalLabel">Sección no disponible</h5>
+            <button type="button" class="btn-close bg-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lo sentimos, esta sección aún no esta disponible. Estamos trabajando para mejorarnos
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-fondo-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>                         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

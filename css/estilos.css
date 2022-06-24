@@ -38,7 +38,7 @@ body {
 }
 
 .bg-cover-index span, .bg-cover-contacto span, .bg-cover-quienes-somos span, .bg-cover-obras span {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -53,11 +53,11 @@ body {
 }
 
 .bg-cover-contacto {
-  background-image: url("../assets/contacto_1.jpg") !important;
+  background-image: url("../assets/contacto2.jpg") !important;
 }
 
 .bg-cover-quienes-somos {
-  background-image: url("../assets/fantasy.jpg") !important;
+  background-image: url("../assets/quienes-somos3.jpg") !important;
 }
 
 .bg-cover-obras {
@@ -73,7 +73,11 @@ body {
 }
 
 .bg-fondo-obras-3 {
-  background: linear-gradient(90deg, #4b6746 0%, #315936 40%, #184f38 67%, #083028 100%);
+  background: linear-gradient(0deg, #380f21 0%, #260830 34%, #020e21 64%, #01120e 100%);
+}
+
+.bg-fondo-quienes-somos {
+  background: linear-gradient(180deg, #450000 39%, #07052f 100%);
 }
 
 .bg-pinceles {
@@ -110,6 +114,15 @@ body {
 
 .bg-form {
   background: radial-gradient(circle, #242942 7%, #05587d 92%, #097791 100%);
+}
+
+.bg-close {
+  background-image: url("../assets/cancel.png");
+  background-size: cover;
+}
+
+.bg-modal {
+  background-color: #123948;
 }
 
 .btn-fondo-2 {
@@ -351,6 +364,12 @@ input:hover, textarea:hover {
 }
 
 @media (max-width: 768px) {
+  .bg-cover-index {
+    background-image: url("../assets/fondo_1_mq.jpg") !important;
+  }
+  .bg-cover-quienes-somos {
+    background-image: url("../assets/quienes-somos3-mq.jpg") !important;
+  }
   .mediaquerie {
     padding-top: 20px;
   }
@@ -366,6 +385,9 @@ input:hover, textarea:hover {
   .animacion-input-2 {
     line-height: 17px;
     width: 280px;
+  }
+  .mediaquerie-5 {
+    font-size: calc(0.8rem + .3vw) !important;
   }
 }
 

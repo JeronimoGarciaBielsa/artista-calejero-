@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="assets/art.png">
   </head>
   <body>
                                <!--Banner-->
@@ -74,8 +75,9 @@
               <textarea class="form-control animacion-input-2" placeholder="Mensaje" rows="3"></textarea>
             </div>
             <div class="my-4 boton2">
-              <button type="submit">Enviar
-              </button>  
+              <!--Este boton deberia ser type=submit, lo cambie a "button" para aplicar el Modal-->
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar
+          </button>  
             </div>
           </form>
         </div>
@@ -93,7 +95,24 @@
         </ul>
         <p class="text-center text-muted">© 2022 Artista callejero, Inc</p>
       </footer>
-    </div>         
+    </div>
+                      <!--Modal--> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-form text-white border border-3 border-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold fs-3" id="exampleModalLabel">Contacto no disponible</h5>
+            <button type="button" class="btn-close bg-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lo sentimos, la sección contacto aún no está disponible. Gracias por intentar contactarte con nosotros. 
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-fondo-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>                   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

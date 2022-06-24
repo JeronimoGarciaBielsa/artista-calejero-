@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/art.png">
   </head>
   <body>
                              <!--Banner-->
@@ -60,8 +61,8 @@
         <div class="col-lg-6 mx-auto z-index-cover animacion-texto">
           <p class="lead mb-4 shadow-text fs-3">No necesitas ser un profesional para hacer arte</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4 gap-3">¡Unite a la comunidad!</button>
-            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4">Comprar Obras</button>
+            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4 gap-3" data-bs-toggle="modal" data-bs-target="#exampleModal">¡Unite a la comunidad!</button>
+            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4"><a href="obras.html" class="text-decoration-none text-white">Comprar Obras</a></button>
           </div>
         </div>
       </div>
@@ -75,11 +76,9 @@
             <img id="icon" src="assets/paint-palette.png" alt="arte">
           </div>
           <div class="mt-2">
-            <h2>¡Sumate!</h2>
+            <h2>¡Súmate!</h2>
             <p>Tus obras de arte quieren ser conocidas y nosotros queremos conocerlas. Haznos llegar tu arte!</p>
-            <a href="#" class="btn btn-outline-secondary btn-fondo-2">
-              Unirse
-            </a>
+            <button class="btn btn-outline-secondary btn-fondo-2" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Unirse</button>
           </div>
         </div>
         <div class="col my-4 d-flex flex-column align-items-center animacion-2">
@@ -87,9 +86,9 @@
             <img id="icon" src="assets/cart.png" alt="carro">
           </div>
           <div class="mt-2">
-            <h2>¡Decorá!</h2>
+            <h2>¡Decora!</h2>
             <p>Le ofrecemos al mundo una forma para decorar sus casas, oficinas o cualquier lugar con algo de sentimentalismo hecho en casa.</p>
-            <a href="#" class="btn btn-outline-secondary btn-fondo-2">
+            <a href="obras.html" class="btn btn-outline-secondary btn-fondo-2">
               Comprar
             </a>
           </div>
@@ -101,9 +100,7 @@
           <div class="mt-2">
             <h2>¡Ayúdanos!</h2>
             <p>Únete a nuestras subastas de caridad para ayudar a aquellos que lo necesitan. Nuestro amor por el arte puede salvar vidas.</p>
-            <a href="#" class="btn btn-outline-secondary btn-fondo-2">
-              Participar
-            </a>
+            <button class="btn btn-outline-secondary btn-fondo-2" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Participar</button>
           </div>
         </div>
       </div>
@@ -123,7 +120,7 @@
             <li class="list-group-item bg-transparent text-white border-0">by<br>susiruela33</li>
           </ul>
           <div class="card-body boton">
-            <button class="learn-more">
+            <button class="learn-more" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
               </span>
@@ -136,13 +133,13 @@
             <img src="assets/cuadro_2.jpg" class="card-img-top animacion-card2" alt="Reflexion">
           </div>
           <div class="card-body">
-            <h5 class="card-title my-0 fs-4">Reflexion</h5>
+            <h5 class="card-title my-0 fs-4">Reflexión</h5>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item bg-transparent text-white border-0">by<br>alanbrito87</li>
           </ul>
           <div class="card-body boton">
-            <button class="learn-more">
+            <button class="learn-more" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
               </span>
@@ -161,16 +158,16 @@
       <div class="py-5 w-100 mb-4 bg-light shadow-box bg-pinceles">
         <div class="container-fluid py-5 text-white">
           <h1 class="display-5 fw-bold">Exprésate con nosotros</h1>
-          <p class="col-md-8 fs-4">Acompañanos en estos desafios y dejate llevar tus propios sentidos.</p>
-          <button class="btn btn-outline-secondary btn-fondo-2 btn-lg" type="button"><a class="text-white text-decoration-none" href="expresate.html">Mas información</a></button>
+          <p class="col-md-8 fs-4">Acompáñanos en estos desafíos y déjate llevar por tus propios sentidos.</p>
+          <button class="btn btn-outline-secondary btn-fondo-2 btn-lg" type="button"><a class="text-white text-decoration-none" href="expresate.html">Más información</a></button>
         </div>
       </div>
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 text-white rounded-3 bg-jumbotron-box shadow-box">
-            <h2>¡Vendé tu arte!</h2>
+            <h2>¡Vende tu arte!</h2>
             <p>¿Quién dijo que debemos ser profesionales? Te ofrecemos la oportunidad de convertir un hobby en una recompensa. Demuestra tu talento y escucha las ofertas de los interesados en tu arte. Nosotros te ayudamos</p>
-            <button class="btn btn-outline-secondary btn-fondo-2" type="button">Mas información</button>
+            <button class="btn btn-outline-secondary btn-fondo-2" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Más información</button>
           </div>
         </div>
         <div class="col-md-6 mediaquerie">
@@ -194,7 +191,24 @@
         </ul>
         <p class="text-center text-muted">© 2022 Artista callejero, Inc</p>
       </footer>
-    </div>         
+    </div>
+                     <!--Modal--> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-modal text-white border border-3 border-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold fs-3" id="exampleModalLabel">Sección no disponible</h5>
+            <button type="button" class="btn-close bg-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lo sentimos, esta sección aún no esta disponible. Estamos trabajando para mejorarnos
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-fondo-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>                         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

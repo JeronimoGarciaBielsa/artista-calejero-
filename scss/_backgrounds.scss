@@ -5,7 +5,7 @@
 	background-size: cover;
 } 
 %span{
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -23,14 +23,14 @@
 }
 .bg-cover-contacto{
 	@extend %bg;
-	background-image: url('../assets/contacto_1.jpg')!important;
+	background-image: url('../assets/contacto2.jpg')!important;
 	span{
 		@extend %span;
 	}
 }
 .bg-cover-quienes-somos{
 	@extend %bg;
-	background-image: url('../assets/fantasy.jpg')!important;
+	background-image: url('../assets/quienes-somos3.jpg')!important;
 	span{
 		@extend %span;
 	}
@@ -50,6 +50,9 @@
 }
 .bg-fondo-obras-3{
 	background: map-get($gradiantes, obras3);
+}
+.bg-fondo-quienes-somos{
+	background: map-get($gradiantes, quienesSomos);
 }
 .bg-pinceles{
   background-image: url('../assets/fondo_pinceles.jpg');
@@ -80,4 +83,11 @@
 }
 .bg-form{
   background: map-get($gradiantes, form);
+}
+.bg-close{
+	background-image: url('../assets/cancel.png');
+	background-size: cover;
+}
+.bg-modal{
+	background-color: #123948
 }

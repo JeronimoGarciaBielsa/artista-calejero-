@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>¡Exprésate!</title>
+    <link rel="icon" type="image/x-icon" href="assets/art.png">
   </head>
   <body>
                                <!--Banner-->
@@ -60,8 +61,8 @@
         <h1 class="display-1 shadow-text fw-bold  z-index-cover animacion-texto">Exprésate con nosotros!</h1>
         <div class="col-lg-6 mx-auto z-index-cover animacion-texto">
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4 gap-3">¡Unite a la comunidad!</button>
-            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4">Comprar Obras</button>
+            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4 gap-3" data-bs-toggle="modal" data-bs-target="#exampleModal">¡Unite a la comunidad!</button>
+            <button type="button" class="btn btn-outline-secondary btn-fondo-2 btn-lg px-4"><a href="obras.html" class="text-decoration-none text-white">Comprar Obras</a></button>
           </div>
         </div>
       </div>
@@ -120,7 +121,7 @@
       </div>
     </div>
                      <!--Form-->
-    <div class="container-fluid d-flex flex-column justify-content-evenly align-items-center text-center bg-form text-white shadow-box rounded-3 mb-5">    
+    <div class="container-fluid d-flex flex-column justify-content-evenly align-items-center text-center bg-form text-white shadow-box mb-5">    
       <h2 class="my-3 fw-bold display-5 border-bottom border-3 animacion-3">¡Inscríbete!</h2>
       <p class="my-3 fs-5">Te hacemos todas las instrucciones<br>por correo</p>          
       <form class="my-2">                 
@@ -133,7 +134,8 @@
           <input type="email" class="form-control form-control-lg animacion-input-2" id="email" placeholder="name@example.com">
         </div>
         <div class="my-4 boton2">
-          <button type="submit">Inscribirme
+          <!--Este boton deberia ser type=submit, lo cambie a "button" para aplicar el Modal-->
+          <button type="button" data-bs-toggle="modal" data-bs-target="#modalForm">Inscribirme
           </button>  
         </div>
       </form>
@@ -150,7 +152,41 @@
         </ul>
         <p class="text-center text-muted">© 2022 Artista callejero, Inc</p>
       </footer>
-    </div>         
+    </div>
+                     <!--Modal--> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-modal text-white border border-3 border-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold fs-3" id="exampleModalLabel">Sección no disponible</h5>
+            <button type="button" class="btn-close bg-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lo sentimos, esta sección aún no esta disponible. Estamos trabajando para mejorarnos
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-fondo-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>          
+                      <!--Modal Form--> 
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalForm" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-form text-white border border-3 border-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold fs-3" id="exampleModalLabel">Inscripción no disponible</h5>
+            <button type="button" class="btn-close bg-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lo sentimos, las inscripciones aún no estan disponibles. 
+          </div>
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-fondo-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>              
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
